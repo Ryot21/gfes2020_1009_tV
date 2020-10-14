@@ -1,0 +1,50 @@
+.c-news {
+
+  // @include min-screen($break_point_min) {
+  //   width: 700px;
+  //   margin: 0 auto;
+  // }
+
+
+  > li {
+    background-color: $lightgray;
+    margin-bottom: 7px;
+    padding: 10px;
+    @include min-screen($break_point_min) {
+      display: table;
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 0;
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: underline;
+    @include min-screen($break_point_min) {
+
+    }
+
+    .c-news__txt {
+      text-decoration: underline;
+    }
+  }
+
+  &__time {
+    @include min-screen($break_point_min) {
+      display: table-cell;
+      width: 110px;
+      padding: 15px;
+    }
+  }
+
+  &__txt {
+    @include min-screen($break_point_min) {
+      display: table-cell;
+      border-left: 1px solid $white;
+      padding: 15px;
+    }
+  }
+
+
+}

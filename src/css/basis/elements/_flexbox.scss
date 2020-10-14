@@ -1,0 +1,86 @@
+/*===================================
+module flexbox
+====================================*/
+
+.flex-col {
+
+  @include min-screen($break_point_min) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.flex-col_2 {
+  > li {
+    @include min-screen($break_point_min) {
+      width: 50%;
+    }
+  }
+}
+
+.flex-col_3 {
+  > li {
+    @include min-screen($break_point_min) {
+      width: 33.3333%;
+    }
+  }
+}
+
+.flex-col_4 {
+  > li {
+    @include min-screen($break_point_min) {
+      width: 25%;
+    }
+  }
+}
+
+.flex-col_5 {
+  > li {
+    @include min-screen($break_point_min) {
+      width: 20%;
+    }
+  }
+}
+
+
+
+
+.flex-col-sp {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include min-screen($break_point_min) {
+    // display: block;
+
+  }
+}
+
+.flex-col-sp_2 {
+
+  @include min-screen($break_point_min) {
+  }
+  > li {
+    width: calc(50% - 5px);
+    @include min-screen($break_point_min) {
+      width: 100%;
+    }
+  }
+}
+
+.flex-col-sp_2_nmargin {
+  > li {
+    width: 50%;
+    @include min-screen($break_point_min) {
+      width: 100%;
+    }
+  }
+}
+
+.flex-col_pc {
+  @include min-screen($break_point_min) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

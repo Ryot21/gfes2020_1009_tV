@@ -1,0 +1,33 @@
+.c-news__list {
+  margin-bottom: 15px;
+  @include min-screen($break_point_min) {
+  }
+  li {
+    padding: 10px 0;
+    border-bottom: 1px solid $lightgray;
+    @include min-screen($break_point_min) {
+      padding: 15px 0;
+    }
+  }
+  dl {
+    @include min-screen($break_point_min) {
+      width: 100%;
+      display: table;
+    }
+    dt {
+      font-weight: bold;
+      @include min-screen($break_point_min) {
+        display: table-cell;
+        width: 100px;
+      }
+    }
+    dd {
+      @include min-screen($break_point_min) {
+        display: table-cell;
+      }
+    }
+  }
+  a {
+    text-decoration: underline;
+  }
+}

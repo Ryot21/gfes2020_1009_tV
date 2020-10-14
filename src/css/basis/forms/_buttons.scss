@@ -1,0 +1,124 @@
+input[type=text] {
+	border-radius: 0;
+    -webkit-appearance: none;}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	border-color: $black;
+	border-radius: 3px;
+	background: $black;
+	color: #fff;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+    outline: none;
+	}
+}
+
+.form-submit {
+	position: relative;
+	width: 100%;
+	line-height: 34px;
+	padding: 15px;
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	@include min-screen($break_point_min) {
+		width: 200px;
+		margin-left: 296px;
+		border-radius: 0 4px 4px 0;
+		font-size: 16px;
+	}
+	&:hover {
+		@include min-screen($break_point_min) {
+			opacity: 0.6;
+		}
+	}
+}
+
+.submit-btn {
+	position: relative;
+	@include min-screen($break_point_min) {
+		margin-top: 30px;
+	}
+}
+
+.submit-btn:after {
+	content: "";
+	display: block;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-family: "Font Awesome 5 Free";
+	content: "\f105";
+	position: absolute;
+	right: 10px;
+	font-size: 14px;
+	color: #fff;
+	@include min-screen($break_point_min) {
+		left: 480px;
+		right: 0;
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+
+.section-confirmation {
+	input[type="submit"], input[type="button"] {
+		width: 100%;
+		padding: 15px 0;
+		font-weight: bold;
+		font-size: 14px;
+		@include min-screen($break_point_min) {
+			font-size: 16px;
+		}
+
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	.input-submit {
+		position: relative;
+		margin-bottom: 10px;
+		@include min-screen($break_point_min) {
+			width: 200px;
+			display: inline-block;
+			margin: 0 20px 0 100px;
+		}
+	}
+
+	.input-button {
+		position: relative;
+		@include min-screen($break_point_min) {
+			width: 200px;
+			display: inline-block;
+		}
+	}
+}
+
+.reset-btn {
+	width: 100%;
+	display: block;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 14px;
+	text-align: center;
+	border: none;
+	border-color: $black;
+	border-radius: 3px;
+	background: $black;
+	color: #fff;
+	&:hover {
+		color: $white;
+	}
+}

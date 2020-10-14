@@ -1,0 +1,17 @@
+.c-page__intro {
+  margin-bottom: 30px;
+  letter-spacing: 0;
+  @include clearfix;
+  @include min-screen($break_point_min) {
+    margin-bottom: 50px;
+  }
+  p {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include min-screen($break_point_min) {
+      margin-bottom: 30px;
+    }
+  }
+}

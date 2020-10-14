@@ -1,0 +1,48 @@
+/* ====================
+ recruit page
+=======================*/
+.recruit {
+  .page-header {
+    background-image: url(../images/recruit/header_img_s@2x.png);
+    @include min-screen($break_point_min) {
+      background-image: url(../images/recruit/header_img@2x.png);
+    }
+  }
+
+  &-project_sec{
+    &_contents{
+      @include clearfix;
+      background-color: $white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 60px;
+      margin-top: 40px;
+      box-shadow: 9px 8px $yellow;
+      &_txt{
+        @include min-screen($break_point_min) {
+        float: left;
+        width: 67%;
+        padding: 40px;
+        }
+      }
+      img{
+        margin-top: 30px;
+        @include min-screen($break_point_min) {
+        float: right;
+        width: 30%;
+        margin-top: 90px;
+        }
+      }
+    }
+    &_table{
+      background-color: $white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 9px 8px $yellow;
+      @include min-screen($break_point_min) {
+          padding: 40px;
+      }
+    }
+  }
+
+}

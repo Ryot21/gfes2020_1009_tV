@@ -1,0 +1,99 @@
+<%
+  var _default = json['default'];
+  for ( var key in _default ) {
+    if ( typeof page[key] === 'undefined' ) {
+      page[key] = _default[key];
+    }
+  }
+-%>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="<%= page['keywords'] %>">
+  <meta name="description" content="<%= page['description'] %>">
+  <title><%= page['title'] %></title>
+
+  <link rel="alternate" hreflang="ja" href="<%= page['canonical'] %>">
+  <link rel="canonical" href="<%= page['canonical'] %>">
+
+  <% if (page['bodyclass'] === 'thanks') { %>
+  <meta name="robots" content="noindex,nofollow">
+  <% } else { %>
+
+  <!-- ogp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<%= page['canonical'] %>">
+  <meta property="og:description" content="<%= page['description'] %>">
+  <meta property="og:image" content="<%= page['canonical'] %>/images/common/ogimage.png">
+  <meta property="og:title" content="<%= page['title'] %>">
+  <meta property="og:site_name" content="<%= page['title'] %>">
+  <!-- /ogp -->
+
+<link rel="shortcut icon" href="./favicon.ico">
+  <% } %>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+</head>
+<body class="<%= page['bodyclass'] %>">
+  <div class="l-wrapper">
+
+    <header id="header" class="l-header">
+      <div class="l-header_catch">
+        <p>
+          <span class="l-header_catch_txt">ワールドプランニングオフィスは団体旅行を始め、出張・視察等の業務渡航を、目的に合わせたプランでトータルコーディネート致します。</span>
+          <a href="/english/" class="l-header_eng l-header_eng_en"><i class="fas fa-globe"></i><span>ENGLISH</span></a>
+          <a href="/" class="l-header_eng l-header_eng_jp"><i class="fas fa-globe"></i><span>JAPANESE</span></a>
+        </p>
+      </div>
+      <div class="header-top">
+        <h1 class="header-logo">
+          <a class="jp" href="/"><img src="/images/common/logo.png" srcset="/images/common/logo.png 1x, /images/common/logo@2x.png 2x" alt="株式会社ワールドプランニングオフィス"></a>
+          <a class="en" href="/"><img src="/images/common/logo_en.jpg" alt="株式会社ワールドプランニングオフィス"></a>
+        </h1>
+
+        <ul class="contact-info">
+          <li class="contact-info_sns">
+            <a href="https://www.facebook.com/wpo.japan" target="_blank"><img src="/images/header/ico_fb.png" srcset="/images/header/ico_fb.png 1x, /images/header/ico_fb@2x.png 2x" alt="facebook"></a>
+            <a href="https://twitter.com/wpojapan" target="_blank"><img src="/images/header/ico_tw.png" srcset="/images/header/ico_tw.png 1x, /images/header/ico_tw@2x.png 2x" alt="twitter"></a>
+            <a href="https://www.instagram.com/wpo.japan/" target="_blank"><img src="/images/header/ico_insta.png" srcset="/images/header/ico_insta.png 1x, /images/header/ico_insta@2x.png 2x" alt="instagram"></a>
+          </li>
+          <li class="contact-info__num">
+            <p class="contact-info__info">営業時間 平日 9:30~18:00 土曜 9:30~15:00 定休日 日曜・祝祭日</p>
+            <a href="tel:0120085104">
+              <i><img src="/images/header/icon_tel.png" srcset="/images/header/icon_tel.png 1x, /images/header/icon_tel@2x.png 2x" alt=""></i></a>
+              <p><span class="contact-info_tlt">TEL</span>03-3354-9995 <span class="contact-info_tlt">FAX</span>03-3354-9996</p>
+            </li>
+        </ul>
+      </div>
+      <div class="l-container">
+
+        <nav id="js-menu" class="globalnavi">
+
+           <ul class="gnavi-list">
+            <li class="gnav_home"><a href="/">ホーム</a></li>
+            <li class="gnav_business"><a href="/business/">業務内容</a></li>
+            <li class="gnav_recruit"><a href="/recruit/">採用情報</a></li>
+            <li class="gnav_company"><a href="/company/">会社案内</a></li>
+            <li class="gnav_access"><a href="/access/">アクセス</a></li>
+            <li class="gnav_contact"><a href="/contact/">お問い合わせ</a></li>
+            <li class="gnav_platinum"><a href="/platinum/">プラチナ旅行倶楽部</a></li>
+          </ul>
+        </nav>
+
+        <div id="js-menuToggle" class="gnav-btn">
+          <div class="gnav-btn__container">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+      </div>
+
+    </header>

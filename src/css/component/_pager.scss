@@ -1,0 +1,37 @@
+/*=========================
+ pagination
+==========================*/
+
+.c-pagination {
+  margin-top: 20px;
+  text-align: center;
+  @include min-screen($break_point_min) {
+    margin-top: 35px;
+  }
+
+  ul {
+    font-weight: bold;
+    > li {
+      display: inline-block;
+    }
+    a {
+      margin: 0 5px;
+      text-decoration: none;
+      @include min-screen($break_point_min) {
+        margin: 0 10px;
+      }
+      &:hover {
+        color: $lightblue;
+      }
+    }
+    span {
+      margin: 0 5px;
+      @include min-screen($break_point_min) {
+        margin: 0 10px;
+      }
+      &.current {
+        color: $lightblue;
+      }
+    }
+  }
+}

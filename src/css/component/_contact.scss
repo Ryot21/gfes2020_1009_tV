@@ -1,0 +1,8 @@
+
+.common-contact {
+  border-top: 1px solid $lightgray;
+  padding: 25px 10px 30px;
+  @include min-screen($break_point_min) {
+    padding: 35px 10px 30px;
+  }
+}

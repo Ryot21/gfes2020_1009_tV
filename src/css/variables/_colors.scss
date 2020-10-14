@@ -1,0 +1,89 @@
+/*===========
+ Basic color
+===========*/
+$black: #000000;
+$white: #ffffff;
+$red : #b01717;
+$wine: #431b1c;
+$darknavy: #051224;
+$navy: #192431;
+/*===========
+ main color for this site.
+===========*/
+$gold: #836900;
+$darkgold: #a07e3a;
+$brown: #211b1c;
+$skyblue: #a9dee4;
+$lightgray: #f7f7f7;
+$pink: #e1c7c6;
+
+/*===========
+ etc color for this site.
+===========*/
+$beige: #fbf5e4;
+$lightbeige: #e6deca;
+$darkbeige: #f3ecd9;
+$beige: #ffeddc;
+
+$red02: #b10202;
+$red03: #950c02;
+$red-gradient: linear-gradient(to bottom, $red02, $red03);
+$blue-gradient: linear-gradient(to bottom, #597eba,#4272ba);
+$orange: #ff9900;
+$lightblue: #7186b9;
+
+/*===========
+ un use
+===========*/
+
+$salmon: #feb38a;
+$beige2: #ffeddb;
+
+
+$lightblack: #4b4948;
+
+$green: #0fb29b;
+$purple: #8b5ad4;
+$lime: #70b823;
+
+
+$lightgreen: #ecf9f7;
+$darkgray: #4b4948;
+$gray: #e1e2e2;
+
+
+
+
+
+$darkenblue: #243f75;
+$blue: #008dff;
+
+
+$yellow: #ffeb0a;
+$darkenyellow: #efc337;
+
+
+$text-red: $red;
+$text-green: $green;
+
+
+$color__background-body: $white;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #f6f6f6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: $black;
+$color__link-visited: $black;
+$color__link-hover: $black;
+$color__text-main: $black;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;

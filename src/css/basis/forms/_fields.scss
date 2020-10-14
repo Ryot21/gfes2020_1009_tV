@@ -1,0 +1,141 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: $black;
+	border: none;
+	padding: 5px 5px;
+	border: 1px solid $black;
+	&:focus {
+		color: $color__text-input-focus;
+	}
+}
+
+select {
+	border: 2px solid $gold;
+	height: 37px;
+	width: 100%;
+	@include min-screen($break_point_min) {
+    width: 290px;
+  }
+}
+
+textarea {
+	width: 100%;
+	height: 120px;
+	resize: vertical;
+  @include min-screen($break_point_min) {
+    width: 100%;
+    height: 140px;
+  }
+}
+
+input[type="text"] {
+	display: block;
+	width: 100%;
+	&.input__min {
+		@include min-screen($break_point_min) {
+	    width: 290px;
+	  }
+	}
+
+	&.middle-width {
+		@include min-screen($break_point_min) {
+	    width: 340px;
+	  }
+	}
+
+	&.full-width {
+		@include min-screen($break_point_min) {
+	    width: 100%;
+	  }
+	}
+
+	&.full-width--670 {
+		@include min-screen($break_point_min) {
+	    width: 670px;
+	  }
+	}
+}
+
+.input-birth input[type="text"]  {
+  @include min-screen($break_point_min) {
+    float: inherit;
+  }
+}
+
+input.input-year {
+    width: 30%;
+    display: inline-block;
+    margin-right: 10px;
+    @include min-screen($break_point_min) {
+      width: 113px;
+    }
+}
+input.input-month {
+    width: 15%;
+    display: inline-block;
+    margin: 0 10px;
+    @include min-screen($break_point_min) {
+      width: 52px;
+    }
+}
+input.input-day {
+    width: 15%;
+    display: inline-block;
+    margin: 0 10px;
+    @include min-screen($break_point_min) {
+      width: 52px;
+    }
+}
+
+.radio-input{
+  opacity: 0;
+	display: none;
+}
+.radio-input + label{
+  padding-left: 20px;
+  position:relative;
+  margin-right: 10px;
+}
+.radio-input + label::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid $gold;
+  border-radius: 50%;
+}
+.radio-input:checked + label::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 9px;
+  height: 9px;
+  background: $gold;
+  border-radius: 50%;
+}
+
+input[type="text"].input--inline {
+	@include min-screen($break_point_min) {
+		display: inline-block;
+		width: 90%;
+	}
+}

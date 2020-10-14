@@ -1,0 +1,1474 @@
+@charset "UTF-8";
+/* ------- 共 通 ------- */
+* {
+  font-family: "游ゴシック","メイリオ",sans-serif;
+  font-size: 16px;
+}
+
+html {
+  overflow: auto;
+}
+
+html body {
+  width: 100%;
+  margin: 0;
+  background-color: #192953;
+  /* HTMLの背景色(※必要に応じて変更※) */
+  overflow: hidden;
+  min-width: 100%;
+}
+
+img {
+  width: 100%;
+  padding: 0;
+  vertical-align: bottom;
+}
+
+.sns-i {
+  width: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pb-b {
+  padding-bottom: 5px;
+}
+
+.pd-l {
+  margin-left: 5px;
+}
+
+.pd-r {
+  margin-right: 5px;
+}
+
+/*---- レスポンシブ・画像切替 ----*/
+.imgPC {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.imgSP {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pd-b {
+  padding-bottom: 10px;
+}
+
+.n-mg-t {
+  margin-top: -2em;
+}
+
+.n-mg-ts {
+  padding-top: 12.5em;
+}
+
+/*******************************************
+--------   Baceスタイルシート (スマホ)  --------
+********************************************/
+@media screen and (max-width: 480px) {
+  .imgPC, .pc-br {
+    display: none;
+  }
+  .snsBox {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 20px;
+  }
+  .snsBox--list {
+    display: flex;
+    list-style: none;
+  }
+  .snsBox--list__right {
+    padding: 2px 0 0 15px;
+  }
+  .mainContents {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .mainContents--inner {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .mainContents--inner .topTitle--main {
+    text-align: center;
+    line-height: 1.1;
+  }
+  .mainContents--inner .topTitle--main h2, .mainContents--inner .topTitle--main h3 {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .mainContents--inner .topTitle--main h2 {
+    font-size: 18px;
+  }
+  .mainContents--inner .topTitle--main h3 {
+    font-size: 22px;
+  }
+  .mainContents--inner .topTitle--main h3 span {
+    letter-spacing: 0.2em;
+  }
+  .mainContents--inner .topTitle--sub {
+    text-align: center;
+    line-height: 1.1;
+    padding: 10px;
+  }
+  .mainContents--inner .topTitle--sub p {
+    color: #F4BA02;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .mainContents--inner .newsBox {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .mainContents--inner .newsBox--topImg {
+    width: 150px;
+    margin: 0 auto;
+    padding: 25px 0 10px;
+  }
+  .mainContents--inner .newsBox--secImg {
+    width: 230px;
+    margin: 20px auto 0;
+  }
+  .mainContents--inner .newsBox--text {
+    line-height: 1.1;
+    padding: 0 20px;
+  }
+  .mainContents--inner .newsBox--text .topText {
+    font-size: 19px;
+    padding: 10px 0;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+  .mainContents--inner .newsBox--text .bottomText {
+    padding: 10px 0;
+    color: rgba(29, 29, 29, 0.94);
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .mainContents--inner .newsBox--text .underber {
+    border-bottom: solid 2px #e60012;
+    padding: 20px 5px 20px;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox .topText {
+    font-size: 19px;
+    padding: 5px 0;
+    font-weight: 700;
+    letter-spacing: -0.1em;
+    line-height: 1.2;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox .Youtube {
+    width: 80px;
+    padding: 15px 0;
+    margin: 0 auto;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox .Youtube img {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox .itemsBox {
+    padding: 0 20px;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem {
+    display: inline-block;
+    height: 230px;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: solid 1px #d95a60;
+    border-radius: 20px;
+    background-color: #E0F1FB;
+    transition: 0.3s;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem:hover {
+    transition: 0.3s;
+    background-color: sandybrown;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem a .imgTitle {
+    padding: 15px 0 0 30px;
+    margin-bottom: -20px;
+    line-height: 1.2;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem a .imgTitle::before {
+    content: "★";
+    margin-left: -1em;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a {
+    display: inline-block;
+    height: 150px;
+    min-width: 144px;
+    max-width: 152px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: solid 1px #d95a60;
+    border-radius: 20px;
+    background-color: #E0F1FB;
+    transition: 0.3s;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a:hover {
+    transition: 0.3s;
+    background-color: sandybrown;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .imgTitle {
+    font-size: 12px;
+    padding: 15px 0 0 20px;
+    margin-bottom: -10px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .imgTitle::before {
+    content: "★";
+    margin-left: -1em;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .font-resize {
+    margin-bottom: -6px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b {
+    display: inline-block;
+    height: 150px;
+    min-width: 144px;
+    max-width: 152px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: solid 1px #d95a60;
+    border-radius: 20px;
+    background-color: #E0F1FB;
+    transition: 0.3s;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b:hover {
+    transition: 0.3s;
+    background-color: sandybrown;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a .imgTitle {
+    font-size: 12px;
+    padding: 15px 0 0 20px;
+    margin-bottom: -10px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a .imgTitle::before {
+    content: "★";
+    margin-left: -1em;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a img {
+    display: block;
+    width: 70%;
+    padding-top: 13px;
+    margin: 0 auto;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a .font-resize {
+    margin-bottom: -6px;
+  }
+  .mainContents--inner .newsBox--bottomText {
+    padding: 0 20px 20px 20px;
+    font-weight: bold;
+  }
+  .mainContents--inner .newsBox--bottomText p {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+  .mainContents--inner .newsBox--bottomText .presentText {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.1em;
+  }
+  .mainContents--inner .newsBox--bottomText .textBox {
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px 0;
+    border: solid 1px #777777;
+    box-sizing: border-box;
+  }
+  .mainContents--inner .newsBox--bottomText .buyBtn {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #000;
+    padding: 10px 0;
+    transition-duration: 0.5s;
+  }
+  .mainContents--inner .newsBox--bottomText .buyBtn:hover {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+  }
+  .mainContents--inner .infoBox {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .mainContents--inner .infoBox--title {
+    text-align: center;
+    letter-spacing: 0.8px;
+    padding: 10px 0 0 25px;
+  }
+  .mainContents--inner .infoBox--title__inner h3 {
+    color: #E60012;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: start;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s {
+    padding: 0 10px 15px 10px;
+    width: 93%;
+    margin: 0 auto;
+    border: 1px;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner {
+    padding: 15px 10px;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: #eaf6fd;
+    border: solid 1px #000000;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBoxs-label {
+    padding-bottom: 5px;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBoxs-label h3 {
+    font-size: 21px;
+    color: #E60012;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBoxs-label h4 {
+    margin: 0;
+    color: #E60012;
+    line-height: 1.5;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBox-about p {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox {
+    padding: 5px;
+    letter-spacing: -0.1em;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--title {
+    border-bottom: solid 2px #e60012;
+    padding-bottom: 5px;
+    margin: 20px 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--title h3 {
+    color: #E60012;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn {
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img {
+    width: 100%;
+    transition-duration: 0.5s;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img:hover {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .product-title, .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .bottomText {
+    font-size: 19px;
+    line-height: 1.2;
+    font-family: 'arial';
+    font-weight: bold;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox {
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .priceBox .price {
+    position: relative;
+    font-family: 'arial';
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.08em;
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .priceBox .price:after {
+    content: "(税込)";
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    width: 100px;
+    top: 5px;
+    padding-left: 2px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox {
+    display: flex;
+    font-size: 22px;
+    font-family: 'arial';
+    font-weight: bold;
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox .date {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    font-size: 22px;
+    font-family: 'arial';
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox .date:after {
+    content: "(月)";
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    top: 3px;
+    padding-left: 2px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox .time {
+    display: inline-block;
+    font-size: 22px;
+    font-family: 'arial';
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText {
+    padding: 10px 5px 0 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top, .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--bottom {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top .tt a, .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--bottom .tt a {
+    color: #0080cc;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top {
+    letter-spacing: 0.06em;
+    padding-left: 12px;
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top::before {
+    content: "※";
+    margin-left: -0.8em;
+  }
+  #footer {
+    text-align: center;
+    margin: 1em;
+  }
+  #footer .footer--text {
+    line-height: 1.3;
+  }
+  #footer .footer--text__top {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #footer .footer--text__bottom {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+  }
+  #footer a img {
+    width: 245px;
+    margin: 0 auto;
+    padding: 10px 0;
+    transition-duration: 0.5s;
+  }
+  #footer a img:hover {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+  }
+  #footer small {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0 0;
+  }
+}
+
+/*******************************************
+--------   タブレット・スタイルシート  --------
+********************************************/
+@media only screen and (min-width: 481px) and (max-width: 1000px) {
+  .imgPC {
+    display: none;
+  }
+  .sp-br, .tb-br {
+    display: none;
+  }
+  .display-f {
+    display: flex;
+  }
+  .pb-t {
+    padding-top: 20px;
+  }
+  .n-mg-st {
+    margin-top: -2em;
+  }
+  .snsBox {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 20px;
+  }
+  .snsBox--list {
+    display: flex;
+    list-style: none;
+  }
+  .snsBox--list__right {
+    padding: 2px 0 0 15px;
+  }
+  .mainContents {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .mainContents--inner {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .mainContents--inner .topTitle--main {
+    text-align: center;
+    line-height: 1.1;
+  }
+  .mainContents--inner .topTitle--main h2, .mainContents--inner .topTitle--main h3 {
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .mainContents--inner .topTitle--main h2 {
+    font-size: 18px;
+  }
+  .mainContents--inner .topTitle--main h3 {
+    font-size: 22px;
+  }
+  .mainContents--inner .topTitle--main h3 span {
+    letter-spacing: 0.2em;
+  }
+  .mainContents--inner .topTitle--sub {
+    text-align: center;
+    line-height: 1.1;
+    padding: 10px;
+  }
+  .mainContents--inner .topTitle--sub p {
+    color: #F4BA02;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .mainContents--inner .newsBox {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .mainContents--inner .newsBox--topImg {
+    width: 150px;
+    margin: 0 auto;
+    padding: 25px 0 10px;
+  }
+  .mainContents--inner .newsBox--secImg {
+    width: 230px;
+    margin: 20px auto 0;
+  }
+  .mainContents--inner .newsBox--text {
+    line-height: 1.1;
+    padding: 0 20px;
+  }
+  .mainContents--inner .newsBox--text .topText {
+    font-size: 19px;
+    padding: 10px 0;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+  }
+  .mainContents--inner .newsBox--text .bottomText {
+    padding: 10px 0;
+    color: rgba(29, 29, 29, 0.94);
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .mainContents--inner .newsBox--text .underber {
+    border-bottom: solid 2px #e60012;
+    padding: 20px 5px 20px;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox .topText {
+    font-size: 19px;
+    padding: 5px 0;
+    font-weight: 700;
+    letter-spacing: -0.1em;
+    line-height: 1.2;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox .Youtube {
+    width: 80px;
+    padding: 15px 0;
+    margin: 0 auto;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox .Youtube img {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox .itemsBox {
+    padding: 0 20px;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem {
+    display: inline-block;
+    height: 350px;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: solid 1px #d95a60;
+    border-radius: 20px;
+    background-color: #E0F1FB;
+    transition: 0.3s;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem:hover {
+    transition: 0.3s;
+    background-color: sandybrown;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem a .imgTitle {
+    padding: 15px 0 0 30px;
+    margin-bottom: -20px;
+    line-height: 1.2;
+  }
+  .mainContents--inner .newsBox .itemsBox .mainItem a .imgTitle::before {
+    content: "★";
+    margin-left: -1em;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a {
+    display: inline-block;
+    height: 250px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: solid 1px #d95a60;
+    border-radius: 20px;
+    background-color: #E0F1FB;
+    transition: 0.3s;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a:hover {
+    transition: 0.3s;
+    background-color: sandybrown;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .imgTitle {
+    font-size: 12px;
+    padding: 15px 0 0 20px;
+    margin-bottom: -10px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .imgTitle::before {
+    content: "★";
+    margin-left: -1em;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .font-resize {
+    margin-bottom: -6px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b {
+    display: inline-block;
+    height: 250px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: solid 1px #d95a60;
+    border-radius: 20px;
+    background-color: #E0F1FB;
+    transition: 0.3s;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b:hover {
+    transition: 0.3s;
+    background-color: sandybrown;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a .imgTitle {
+    font-size: 12px;
+    padding: 15px 0 0 20px;
+    margin-bottom: -10px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a .imgTitle::before {
+    content: "★";
+    margin-left: -1em;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a img {
+    display: block;
+    width: 60%;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a .font-resize {
+    margin-bottom: -6px;
+  }
+  .mainContents--inner .newsBox--bottomText {
+    padding: 0 20px 20px 20px;
+    font-weight: bold;
+  }
+  .mainContents--inner .newsBox--bottomText p {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .mainContents--inner .newsBox--bottomText .presentText {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.1em;
+  }
+  .mainContents--inner .newsBox--bottomText .textBox {
+    font-size: 16px;
+    padding: 5px;
+    margin: 20px 10px;
+    border: solid 1px #777777;
+    box-sizing: border-box;
+  }
+  .mainContents--inner .newsBox--bottomText .buyBtn {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #000;
+    padding: 20px 10px;
+    transition-duration: 0.5s;
+  }
+  .mainContents--inner .newsBox--bottomText .buyBtn:hover {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+  }
+  .mainContents--inner .infoBox {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .mainContents--inner .infoBox--title {
+    text-align: center;
+    letter-spacing: 0.8px;
+    padding: 10px 0 0 25px;
+  }
+  .mainContents--inner .infoBox--title__inner h3 {
+    color: #E60012;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: start;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s {
+    padding: 0 10px 15px 10px;
+    width: 93%;
+    margin: 0 auto;
+    border: 1px;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner {
+    padding: 15px 10px;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: #eaf6fd;
+    border: solid 1px #000000;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBoxs-label {
+    padding-bottom: 5px;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBoxs-label h3 {
+    font-size: 21px;
+    color: #E60012;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBoxs-label h4 {
+    margin: 0;
+    color: #E60012;
+    line-height: 1.5;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBox-about p {
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox {
+    padding: 5px;
+    letter-spacing: -0.1em;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--title {
+    border-bottom: solid 2px #e60012;
+    padding-bottom: 5px;
+    margin: 20px 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--title h3 {
+    color: #E60012;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn {
+    width: 200px;
+    text-align: center;
+    margin: 20px 30px 20px 10px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img {
+    width: 100%;
+    transition-duration: 0.5s;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img:hover {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .product-title, .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .bottomText {
+    font-size: 19px;
+    line-height: 1.2;
+    font-family: 'arial';
+    font-weight: bold;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox {
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .priceBox .price {
+    position: relative;
+    font-family: 'arial';
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.08em;
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .priceBox .price:after {
+    content: "(税込)";
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    width: 100px;
+    top: 5px;
+    padding-left: 2px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox {
+    display: flex;
+    font-size: 22px;
+    font-family: 'arial';
+    font-weight: bold;
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox .date {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    font-size: 22px;
+    font-family: 'arial';
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox .date:after {
+    content: "(月)";
+    position: absolute;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+    top: 3px;
+    padding-left: 2px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox .time {
+    display: inline-block;
+    font-size: 22px;
+    font-family: 'arial';
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText {
+    padding: 10px 5px 0 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top, .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--bottom {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top .tt a, .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--bottom .tt a {
+    color: #0080cc;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top {
+    letter-spacing: 0.06em;
+    padding-left: 12px;
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top::before {
+    content: "※";
+    margin-left: -0.8em;
+  }
+  #footer {
+    text-align: center;
+    margin: 1em;
+  }
+  #footer .footer--text {
+    line-height: 1.3;
+  }
+  #footer .footer--text__top {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #footer .footer--text__bottom {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+  }
+  #footer a img {
+    width: 245px;
+    margin: 0 auto;
+    padding: 10px 0;
+    transition-duration: 0.5s;
+  }
+  #footer a img:hover {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+  }
+  #footer small {
+    display: block;
+    color: #ffffff;
+    padding: 10px 0 0;
+  }
+}
+
+/*******************************************
+-----------   PC・スタイルシート   -----------
+********************************************/
+@media screen and (min-width: 1001px) {
+  /*---- pc共通 ----*/
+  .sns-i {
+    width: 30px;
+  }
+  .imgSP {
+    display: none;
+  }
+  .sp-br {
+    display: none;
+  }
+  .tb-br {
+    display: none;
+  }
+  #header .mainvisual {
+    margin: 0;
+  }
+  .snsBox {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 50px;
+  }
+  .snsBox--list {
+    display: flex;
+    list-style: none;
+  }
+  .snsBox--list__right {
+    padding: 2px 0 0 35px;
+  }
+  .mainContents {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1012px;
+  }
+  .mainContents--inner {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .mainContents--inner .topTitle--sub {
+    text-align: center;
+    line-height: 1.1;
+    padding-bottom: 30px;
+  }
+  .mainContents--inner .topTitle--sub p {
+    color: #F4BA02;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .mainContents--inner .newsBox {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .mainContents--inner .newsBox--topImg {
+    display: inline-block;
+    width: 280px;
+  }
+  .mainContents--inner .newsBox--topImg img {
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+  .mainContents--inner .newsBox--secImg {
+    display: none;
+  }
+  .mainContents--inner .newsBox .Youtube {
+    display: inline-block;
+    width: 80px;
+    padding: 0 100px;
+    margin-top: -4em;
+  }
+  .mainContents--inner .newsBox .Youtube img {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox--text {
+    display: inline-block;
+    width: 660px;
+    line-height: 1.1;
+  }
+  .mainContents--inner .newsBox--text .newsBox--secImg-pc {
+    display: inline-block;
+    width: 250px;
+    padding: 20px 20px 0 20px;
+  }
+  .mainContents--inner .newsBox--text .newsBox--secImg-pc img {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox--text .topText {
+    display: inline-block;
+    font-size: 29px;
+    padding: 10px 0;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+  }
+  .mainContents--inner .newsBox--text .f-h {
+    width: 600px;
+  }
+  .mainContents--inner .newsBox--text .f-f {
+    width: 95%;
+    padding-left: 20px;
+  }
+  .mainContents--inner .newsBox--text .bottomText {
+    padding: 10px 0;
+    color: rgba(29, 29, 29, 0.94);
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .mainContents--inner .newsBox--text .underber {
+    border-bottom: solid 2px #e60012;
+    padding: 20px 5px 20px;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox .topText {
+    width: 500px;
+    font-size: 29px;
+    padding-left: 290px;
+    font-weight: 700;
+    letter-spacing: -0.1em;
+    line-height: 1.2;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox .Youtube {
+    display: none;
+    width: 80px;
+    padding: 15px 0;
+    margin: 0 auto;
+  }
+  .mainContents--inner .newsBox--text .YoutubeBox .Youtube img {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox .f-r {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox .itemsBox {
+    padding: 0 20px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems {
+    width: 100%;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a, .mainContents--inner .newsBox .itemsBox .subItems--a1 {
+    display: inline-block;
+    height: 250px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: solid 1px #d95a60;
+    border-radius: 20px;
+    background-color: #E0F1FB;
+    transition: 0.3s;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a:hover, .mainContents--inner .newsBox .itemsBox .subItems--a1:hover {
+    transition: 0.3s;
+    background-color: sandybrown;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a, .mainContents--inner .newsBox .itemsBox .subItems--a1 a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .imgTitle, .mainContents--inner .newsBox .itemsBox .subItems--a1 a .imgTitle {
+    font-size: 12px;
+    padding: 15px 0 0 20px;
+    margin-bottom: -10px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .imgTitle::before, .mainContents--inner .newsBox .itemsBox .subItems--a1 a .imgTitle::before {
+    content: "★";
+    margin-left: -1em;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a img, .mainContents--inner .newsBox .itemsBox .subItems--a1 a img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .img-b, .mainContents--inner .newsBox .itemsBox .subItems--a1 a .img-b {
+    width: 90%;
+    padding-top: 40px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--a a .font-resize, .mainContents--inner .newsBox .itemsBox .subItems--a1 a .font-resize {
+    margin-bottom: -6px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b {
+    display: inline-block;
+    height: 250px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: solid 1px #d95a60;
+    border-radius: 20px;
+    background-color: #E0F1FB;
+    transition: 0.3s;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b:hover {
+    transition: 0.3s;
+    background-color: sandybrown;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a .imgTitle {
+    font-size: 12px;
+    padding: 15px 0 0 20px;
+    margin-bottom: -10px;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a .imgTitle::before {
+    content: "★";
+    margin-left: -1em;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a img {
+    display: block;
+    width: 60%;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+  .mainContents--inner .newsBox .itemsBox .subItems--b a .font-resize {
+    margin-bottom: -6px;
+  }
+  .mainContents--inner .newsBox--bottomText {
+    padding: 0 20px 20px 20px;
+    font-weight: bold;
+  }
+  .mainContents--inner .newsBox--bottomText p {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  .mainContents--inner .newsBox--bottomText .presentText {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.1em;
+  }
+  .mainContents--inner .newsBox--bottomText .textBox {
+    font-size: 16px;
+    padding: 15px 5px;
+    margin: 20px 0;
+    border: solid 1px #777777;
+    box-sizing: border-box;
+  }
+  .mainContents--inner .newsBox--bottomText .buyBtn {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #000;
+    padding: 20px 10px;
+    transition-duration: 0.5s;
+  }
+  .mainContents--inner .newsBox--bottomText .buyBtn:hover {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+  }
+  .mainContents--inner .infoBox {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .mainContents--inner .infoBox--title {
+    text-align: center;
+    letter-spacing: 0.8px;
+    padding: 20px 0 10px 33px;
+  }
+  .mainContents--inner .infoBox--title__inner h3 {
+    color: #E60012;
+    font-size: 29px;
+    font-weight: bold;
+    text-align: start;
+    letter-spacing: -1px;
+    line-height: 1.1em;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s {
+    padding: 0 10px 15px 10px;
+    width: 93%;
+    margin: 0 auto;
+    border: 1px;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner {
+    padding: 15px 10px;
+    margin: 10px 0;
+    font-weight: bold;
+    background-color: #eaf6fd;
+    border: solid 1px #000000;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBoxs-label {
+    padding: 0 0 10px 10px;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBoxs-label h3 {
+    display: inline-block;
+    font-size: 26px;
+    color: #E60012;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBoxs-label h4 {
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+    color: #E60012;
+    line-height: 1.5;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBox-about {
+    padding: 0 10px;
+  }
+  .mainContents--inner .infoBox .infoBox-s--inner .infoBox-about p {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox {
+    padding: 5px;
+    letter-spacing: -0.1em;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--title {
+    border-bottom: solid 2px #e60012;
+    padding-bottom: 5px;
+    margin: 20px 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--title h3 {
+    color: #E60012;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+    line-height: 0.1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img {
+    width: 100%;
+    transition-duration: 0.5s;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img:hover {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .product-title, .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .bottomText {
+    font-size: 22px;
+    line-height: 1.2;
+    font-family: 'arial';
+    font-weight: bold;
+    padding-bottom: 0;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox {
+    display: flex;
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .priceBox .price {
+    position: relative;
+    font-family: 'arial';
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -0.08em;
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .priceBox .price:after {
+    content: "(税込)";
+    position: absolute;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100px;
+    top: 7px;
+    padding-left: 2px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox {
+    display: inline-block;
+    display: flex;
+    font-size: 25px;
+    font-family: 'arial';
+    font-weight: bold;
+    line-height: 1;
+    padding-left: 50px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox .date {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    font-size: 25px;
+    font-family: 'arial';
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox .date:after {
+    content: "(月)";
+    position: absolute;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100px;
+    top: 5px;
+    padding-left: 2px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .productBox .dateBox .time {
+    display: inline-block;
+    width: 200px;
+    font-size: 25px;
+    font-family: 'arial';
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    padding-left: 50px;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText {
+    padding: 10px 5px 0 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top, .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--bottom {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top .tt a, .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--bottom .tt a {
+    color: #0080cc;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top {
+    letter-spacing: 0.06em;
+    padding-left: 12px;
+    line-height: 1;
+  }
+  .mainContents--inner .infoBox .infoBox-s .ticketBox .bottomText--top::before {
+    content: "※";
+    margin-left: -0.8em;
+  }
+  #footer {
+    text-align: center;
+    margin: 1em;
+  }
+  #footer .footer--text__top {
+    font-size: 2vw;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  #footer .footer--text__bottom {
+    font-size: 4vw;
+    color: #ffffff;
+    margin: 0;
+  }
+  #footer a img {
+    width: 400px;
+    margin: 0 auto;
+    padding: 50px;
+    transition-duration: 0.5s;
+  }
+  #footer a img:hover {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+  }
+  #footer small {
+    display: block;
+    color: #ffffff;
+    padding-top: 5px;
+  }
+}

@@ -1,0 +1,93 @@
+.l-sidebar {
+
+  display: none;
+  @include min-screen($break_point_min) {
+    padding-bottom: 20px;
+    float: right;
+    display: block;
+    width: 220px;
+    background-color: $white;
+  }
+
+  .side-contents {
+    margin-top: 10px;
+    padding: 0 10px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .side-contents__title {
+    @include min-screen($break_point_min) {
+      border-top: 2px solid $lightgray;
+      border-bottom: 2px solid $lightgray;
+      margin-bottom: 10px;
+      padding: 10px 0;
+      font-size: 14px;
+      text-align: center;
+    }
+
+  }
+
+  .side-search {
+    padding: 0 6px;
+    .side-search__input {
+      @include min-screen($break_point_min) {
+        width: 130px;
+        display: inline-block;
+      }
+    }
+    .side-search__btn {
+      @include min-screen($break_point_min) {
+        display: inline-block;
+        @include gradient($red02,$red03,vertical);
+        padding: 4px 10px;
+        font-size: 14px;
+        color: $white;
+        font-weight: bold;
+      }
+    }
+  }
+
+
+  .side-list {
+    > li {
+      @include min-screen($break_point_min) {
+        margin-bottom: 8px;
+        padding-left: 20px;
+      }
+      a {
+        text-decoration: none;
+
+        @include min-screen($break_point_min) {
+
+        }
+        &::before {
+          font-family: "Font Awesome 5 Free";
+          content: "\f0da";
+          font-weight: bold;
+          display: inline-block;
+          color: $lightblue;
+          margin-right: 3px;
+        }
+      }
+    }
+    &.side-list--orange {
+      > li {
+        a {
+          &::before {
+            color: $orange;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+.index {
+  .side-contents__fortune {
+    display: none;
+  }
+}

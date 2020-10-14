@@ -1,0 +1,53 @@
+/* ====================
+ company page
+=======================*/
+.company {
+  .page-header {
+    background-image: url(../images/company/header_img_s@2x.png);
+    @include min-screen($break_point_min) {
+      background-image: url(../images/company/header_img@2x.png);
+    }
+  }
+&_en{
+  .en{
+    display: block !important;
+  }
+  .jp{
+    display: none !important;
+  }
+  .header-fixed{
+    display: none;
+  }
+  .page-header{
+    h2{
+      padding-bottom: 15px;
+    }
+  }
+  .gnav-btn{
+    display: none;
+  }
+  .l-header_catch{
+    .l-header_catch_txt{
+      display: none !important;
+    }
+  }
+  .l-header_eng_en{
+    display: none !important;
+  }
+  .l-header_eng_jp{
+    display: block !important;
+    right: 10px;
+  }
+  .globalnavi{
+    display: none;
+  }
+  .contact-info{
+    display: none !important;
+  }
+  .page-header{
+    @include min-screen($break_point_min) {
+      margin-top: 140px;
+    }
+  }
+}
+}

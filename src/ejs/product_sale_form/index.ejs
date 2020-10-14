@@ -1,0 +1,112 @@
+<%-
+  include('../common/_head', {
+    page: json['product_sale']
+  });
+%>
+
+
+
+<div class="main-block">
+  <main class="l-main">
+    <section class="page-header">
+      <h2>物販商品掲載お問合せフォーム<br>（事業者様向け）<span>PRODUCT SALE FORM</span></h2>
+    </section>
+    <section class="sec-content contact-intro_sec">
+      <div class="l-container page-container">
+
+        <div class="page-inner">
+
+          <h4>
+            About
+          </h4>
+          <p class="basic_p">
+            わたしたちは1988年創業の旅行会社です。日本全国、世界中を飛び回り培った経験をもとに、ベテラン旅行会社スタッフがオススメする各地の『旨い』『楽しい』セレクションをお届けすることをコンセプトとし、ポピュラーなものからちょっとマニアックなご当地グルメ、全国の名産品のほか、独自のコネクションを活用した品々を幅広く展開しております。 <br>
+            <br>
+            新型コロナウイルス感染症の拡大は、私たちの日々の生活に大きな変化を及ぼしました。 これまでの価値観は覆され、不安を感じている方も多いかと存じます。<br>
+            <br>
+            私ども旅行代理店への打撃は当然のことながら、全国各地のホテル、レジャー施設、観光農園に至るまで、観光に付随するすべての機関への影響は計り知れません。 私どもの仕事は、全国各地の関係機関の皆様の力なしでは成立しません。  このような状況を受け、弊社では日頃お世話になっている関係機関の皆様への恩返しと、旅行に行けない状況の中でも、少しでも皆様が毎日を楽しく過ごして<br>
+            <br>
+            頂けるような商品を厳選した、物販事業を発足するに至りました。 皆様の生活に彩りを添えられるような商品を今後もご提案して参ります。  当社では、商品販売にご協力をいただける全国の自治体様・事業者様を常に募集しております。 （観光レジャー施設・ホテル・観光農園・ドライブイン・レストラン・観光協会等） 食品・生活雑貨等ジャンルは一切問いません。掲載料も一切いただいておりません。 少しでもお力添えができればと考えております。 商品掲載をご希望の事業者様がいらっしゃいましたら、下記よりお問合せください。
+          </p>
+          <p class="basic_p txt_gray">
+            ワールドプランニングオフィスへのお問合せありがとうございます。<br>
+            <br>
+            内容を確認次第、ご連絡致します。<br>
+            尚、お問い合わせ内容によりましては、ご回答に時間がかかる場合がございます。<br>
+            お客さまからいただいたEメールアドレスが違っている場合や、システム障害などによりお返事ができない場合がございます。大変お手数ですが返答のない場合は、お電話でその旨お問い合わせください。<br>
+            <br>
+            ■お問合せ情報は、フォームにご記入頂きましたメールアドレス宛にも自動返送されます。<br>
+            <span class="form-require">※</span>印は必須項目となっております。<br>
+          </p>
+
+
+          <h4>物販商品<br class="u-pc-hide"> 問合せフォーム</h4>
+          <div class="form__block">
+
+          <form method="post" action="mail.php">
+            <table class="table-default">
+              <tr>
+                <th>会社名・団体名</th>
+                <td><input type="text" name="会社名・団体名" placeholder="" required></td>
+              </tr>
+              <tr>
+                <th>ご担当者様<span class="form-require">※</span></th>
+                <td><input type="text" name="ご担当者様" placeholder="" required></td>
+              </tr>
+              <tr>
+                <th>フリガナ<span class="form-require">※</span></th>
+                <td><input type="text" name="フリガナ" placeholder="" required></td>
+              </tr>
+              <tr>
+                <th>掲載ご希望の商品詳細、PRポイント等<span class="form-require">※</span></th>
+                <td><textarea name="掲載ご希望の商品詳細、PRポイント等" cols="50" rows="5" required></textarea></td>
+              </tr>
+              <tr>
+                <th>料金のめやす<span class="form-require">※</span></th>
+                <td><input type="text" name="料金のめやす" required></td>
+              </tr>
+              <tr>
+                <th>電話番号<span class="form-require">※</span></th>
+                <td><input type="text" name="電話番号" placeholder="" required></td>
+              </tr>
+              <tr>
+                <th>FAX<span class="form-require">※</span></th>
+                <td><input type="text" name="FAX" placeholder="" required></td>
+              </tr>
+              <tr>
+                <th>メールアドレス<span class="form-require">※</span></th>
+                <td><input type="text" name="メールアドレス" placeholder="" required></td>
+              </tr>
+
+              <tr>
+                <th>お問合せ内容</th>
+                <td><textarea name="お問合せ内容" cols="50" rows="5"></textarea></td>
+              </tr>
+            </table>
+            <div class="submit">
+              <input class="button" type="submit" value="内容確認画面へ" />
+            </div>
+          </form>
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+  </main>
+
+</div>
+<!-- ここまでコンテンツ -->
+
+
+<% include ../common/_footer %>

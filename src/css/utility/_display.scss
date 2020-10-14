@@ -1,0 +1,27 @@
+.u-pc-hide {
+  @include min-screen($break_point_pc) {
+    display: none !important;
+  }
+}
+.u-sp-hide {
+  display: none !important;
+  @include min-screen($break_point_pc) {
+    display: inline !important;
+  }
+}
+.u-sp-hide-b {
+  display: none !important;
+  @include min-screen($break_point_min) {
+    display: block !important;
+  }
+}
+
+.u-d-i {
+  display: inline !important;
+}
+.u-d-ib {
+  display: inline-block !important;
+}
+.u-d-b {
+  display: block !important;
+}

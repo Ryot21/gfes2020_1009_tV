@@ -1,0 +1,143 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+  &:after {
+    content:" ";
+    display:block;
+    clear:both;
+  }
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Media queries
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin img2x($image, $extension, $size, $position: center, $repeat: no-repeat) {
+  background: url($image + '.' + $extension) $repeat $position;
+  background-size: $size;
+
+  @media
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (   min--moz-device-pixel-ratio: 2),
+    screen and (   -moz-min-device-pixel-ratio: 2),
+    screen and (     -o-min-device-pixel-ratio: 2/1),
+    screen and (        min-device-pixel-ratio: 2),
+    screen and (             min-resolution: 192dpi),
+    screen and (             min-resolution: 2dppx) {
+    background-image: url($image + '@2x' + '.' + $extension);
+    background-size: $size;
+  }
+}
+
+@mixin imgFull($image, $extension, $size, $position: center, $repeat: no-repeat) {
+  background: url($image + '.' + $extension) $repeat $position;
+  background-size: $size;
+
+  @media
+    screen and (min-width: $break_point_min) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: $break_point_min) and (   min--moz-device-pixel-ratio: 2),
+    screen and (min-width: $break_point_min) and (   -moz-min-device-pixel-ratio: 2),
+    screen and (min-width: $break_point_min) and (     -o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: $break_point_min) and (        min-device-pixel-ratio: 2),
+    screen and (min-width: $break_point_min) and (             min-resolution: 192dpi),
+    screen and (min-width: $break_point_min) and (             min-resolution: 2dppx) {
+    background-image: url($image + '@2x' + '.' + $extension);
+    background-size: $size;
+  }
+}
+
+@mixin transition($duration: .3s) {
+  transition: all $duration ease;
+}
+
+// Clearfix
+@mixin clearfix() {
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin flexbox() {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+//retina background
+@mixin retina {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+    @content;
+  }
+}
+
+@mixin gradient($start-color, $end-color, $orientation)
+ {
+ background: $start-color;
+ @if $orientation == vertical
+ {
+ // vertical
+ background: -moz-linear-gradient(top,  $start-color 0%, $end-color 100%);
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+ background: -webkit-linear-gradient(top,  $start-color 0%,$end-color 100%);
+ background: -o-linear-gradient(top,  $start-color 0%,$end-color 100%);
+ background: -ms-linear-gradient(top,  $start-color 0%,$end-color 100%);
+ background: linear-gradient(to bottom,  $start-color 0%,$end-color 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=0 );
+ }
+ @else if $orientation == horizontal
+ {
+ // horizontal
+ background: -moz-linear-gradient(left,  $start-color 0%, $end-color 100%);
+ background: -webkit-gradient(linear, left top, right top, color-stop(0%,$start-color), color-stop(100%,$end-color));
+ background: -webkit-linear-gradient(left,  $start-color 0%,$end-color 100%);
+ background: -o-linear-gradient(left,  $start-color 0%,$end-color 100%);
+ background: -ms-linear-gradient(left,  $start-color 0%,$end-color 100%);
+ background: linear-gradient(to right,  $start-color 0%,$end-color 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+ }
+ @else
+ {
+ // radial
+ background: -moz-radial-gradient(center, ellipse cover,  $start-color 0%, $end-color 100%);
+ background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$start-color), color-stop(100%,$end-color));
+ background: -webkit-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+ background: -o-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+ background: -ms-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+ background: radial-gradient(ellipse at center,  $start-color 0%,$end-color 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+ }
+ }
