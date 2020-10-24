@@ -1,79 +1,6 @@
 @charset "UTF-8";
-/* ------- 共 通 ------- */
-* {
-  font-family: "游ゴシック","メイリオ",sans-serif;
-  font-size: 16px;
-}
-
-html {
-  overflow: auto;
-}
-
-html body {
-  width: 100%;
-  margin: 0;
-  background-color: #192953;
-  /* HTMLの背景色(※必要に応じて変更※) */
-  overflow: hidden;
-  min-width: 100%;
-}
-
-img {
-  width: 100%;
-  padding: 0;
-  vertical-align: bottom;
-}
-
-.sns-i {
-  width: 20px;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.pb-b {
-  padding-bottom: 5px;
-}
-
-.pd-l {
-  margin-left: 5px;
-}
-
-.pd-r {
-  margin-right: 5px;
-}
-
-/*---- レスポンシブ・画像切替 ----*/
-.imgPC {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.imgSP {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.pd-b {
-  padding-bottom: 10px;
-}
-
-.n-mg-t {
-  margin-top: -2em;
-}
-
-.n-mg-ts {
-  padding-top: 12.5em;
-}
-
 /*******************************************
---------   Baceスタイルシート (スマホ)  --------
+　　　　　Gfes2020 トップページ　Bace SP
 ********************************************/
 @media screen and (max-width: 480px) {
   .imgPC, .pc-br {
@@ -398,19 +325,6 @@ a:hover {
     font-weight: bold;
     margin: 0;
   }
-  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn {
-    width: 200px;
-    text-align: center;
-    margin: 20px auto;
-  }
-  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img {
-    width: 100%;
-    transition-duration: 0.5s;
-  }
-  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img:hover {
-    opacity: 0.7;
-    transition-duration: 0.3s;
-  }
   .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .product-title, .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .bottomText {
     font-size: 19px;
     line-height: 1.2;
@@ -514,16 +428,6 @@ a:hover {
     font-weight: bold;
     margin: 0;
   }
-  #footer a img {
-    width: 245px;
-    margin: 0 auto;
-    padding: 10px 0;
-    transition-duration: 0.5s;
-  }
-  #footer a img:hover {
-    opacity: 0.7;
-    transition-duration: 0.3s;
-  }
   #footer small {
     display: block;
     color: #ffffff;
@@ -532,7 +436,7 @@ a:hover {
 }
 
 /*******************************************
---------   タブレット・スタイルシート  --------
+　　　　  Gfes2020 トップページ　 TB  
 ********************************************/
 @media only screen and (min-width: 481px) and (max-width: 1000px) {
   .imgPC {
@@ -867,19 +771,6 @@ a:hover {
     font-weight: bold;
     margin: 0;
   }
-  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn {
-    width: 200px;
-    text-align: center;
-    margin: 20px 30px 20px 10px;
-  }
-  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img {
-    width: 100%;
-    transition-duration: 0.5s;
-  }
-  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img:hover {
-    opacity: 0.7;
-    transition-duration: 0.3s;
-  }
   .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .product-title, .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text .bottomText {
     font-size: 19px;
     line-height: 1.2;
@@ -1001,7 +892,7 @@ a:hover {
 }
 
 /*******************************************
------------   PC・スタイルシート   -----------
+　　　　  Gfes2020 トップページ　 PC  
 ********************************************/
 @media screen and (min-width: 1001px) {
   /*---- pc共通 ----*/
@@ -1333,21 +1224,6 @@ a:hover {
     font-weight: bold;
     margin: 0;
   }
-  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn {
-    display: inline-block;
-    width: 200px;
-    text-align: center;
-    margin: 20px;
-    line-height: 0.1;
-  }
-  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img {
-    width: 100%;
-    transition-duration: 0.5s;
-  }
-  .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-btn a img:hover {
-    opacity: 0.7;
-    transition-duration: 0.3s;
-  }
   .mainContents--inner .infoBox .infoBox-s .ticketBox--main .ticketBox-text {
     display: inline-block;
     margin-left: 10px;
@@ -1471,4 +1347,133 @@ a:hover {
     color: #ffffff;
     padding-top: 5px;
   }
+}
+
+.banner-img {
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+.banner-img:hover {
+  opacity: 0.7;
+  transition-duration: 0.3s;
+}
+
+.gfood_banner {
+  width: 250px;
+  text-align: center;
+  line-height: 60px;
+  margin: 20px auto;
+  padding-top: 20px;
+}
+
+.gfood_banner a {
+  width: 100%;
+}
+
+.ticket-banner {
+  width: 200px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1000px) {
+  .ticket-banner {
+    margin: 20px 30px 20px 10px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .ticket-banner {
+    display: inline-block;
+    margin: 20px;
+    line-height: 0.1;
+  }
+}
+
+.ticket-banner a {
+  width: 100%;
+}
+
+.gstore-banner {
+  width: 250px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.gstore-banner a {
+  width: 100%;
+}
+
+/* ------- 共 通 ------- */
+* {
+  font-family: "游ゴシック","メイリオ",sans-serif;
+  font-size: 16px;
+}
+
+html {
+  overflow: auto;
+}
+
+html body {
+  width: 100%;
+  margin: 0;
+  background-color: #192953;
+  /* HTMLの背景色(※必要に応じて変更※) */
+  overflow: hidden;
+  min-width: 100%;
+}
+
+img {
+  width: 100%;
+  padding: 0;
+  vertical-align: bottom;
+}
+
+.sns-i {
+  width: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pb-b {
+  padding-bottom: 5px;
+}
+
+.pd-l {
+  margin-left: 5px;
+}
+
+.pd-r {
+  margin-right: 5px;
+}
+
+/*---- レスポンシブ・画像切替 ----*/
+.imgPC {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.imgSP {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pd-b {
+  padding-bottom: 10px;
+}
+
+.n-mg-t {
+  margin-top: -2em;
+}
+
+.n-mg-ts {
+  padding-top: 12.5em;
 }

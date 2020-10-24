@@ -1,0 +1,1475 @@
+/*******************************************
+　　　　　Gfes2020 トップページ　Bace SP
+********************************************/
+@media screen and ( max-width:480px ){
+    // PC共通
+    .imgPC, .pc-br {
+        display: none;
+    }
+    // 1.ヘッダー画像
+
+    // 2.SNSアイコン
+    .snsBox {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 20px;
+        &--list{
+            display: flex;
+            list-style: none;
+            // &__left {
+            // }
+            &__right {
+                padding: 2px 0 0 15px;
+            }
+        }
+    }
+    // 3.メインコンテンツ
+    .mainContents {
+        width: 100%;
+        margin: 0 auto;
+        max-width:400px;
+        &--inner {
+            padding: 0 15px;
+            margin: 0 auto;
+            // 3-1.トップタイトル
+            .topTitle {
+                &--main {
+                    text-align: center;
+                    line-height: 1.1;
+                    h2, h3 {
+                        color: #fff;
+                        font-weight: bold;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    h2 {
+                        font-size: 18px;
+                    }
+                    h3 {
+                        font-size: 22px;
+                        span {
+                            letter-spacing: 0.2em;
+                        }
+                    }
+                }
+                &--sub {
+                    text-align: center;
+                    line-height: 1.1;
+                    padding: 10px;
+                    p {
+                        color: #F4BA02;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 22px;
+                        font-weight: bold;
+
+                    }
+                }
+            }
+            // 3-2.総合司会決定/3-4.ゴジラ・ストアTV/3-5.酒井ゆうじ造形LIVE
+            .newsBox {
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 20px;
+                &--topImg {
+                    width: 150px;
+                    margin: 0 auto;
+                    padding: 25px 0 10px;
+                }
+                &--secImg {
+                    width: 230px;
+                    margin: 20px auto 0;
+                }
+                &--text {
+                    line-height: 1.1;
+                    padding: 0 20px;
+                    .topText {
+                        font-size: 19px;
+                        padding: 10px 0;
+                        font-weight: 700;
+                        letter-spacing: 0.05em;
+                        margin: 0;
+                    }
+                    .bottomText {
+                        padding: 10px 0;
+                        color: rgba(29, 29, 29, 0.94);
+                        font-size: 14px;
+                        font-family: monospace;
+                        font-weight: 700;
+                        line-height: 1.2;
+                    }
+                    .underber {
+                        border-bottom: solid 2px #e60012;
+                        padding: 20px 5px 20px;
+                    }
+                    .YoutubeBox {
+                        width: 100%;
+                        padding-top: 10px;
+                        .topText {
+                            font-size: 19px;
+                            padding: 5px 0;
+                            font-weight: 700;
+                            letter-spacing: -0.1em;
+                            line-height: 1.2;
+                        }
+                        .Youtube {
+                            width: 80px;
+                            padding: 15px 0;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .itemsBox {
+                    padding: 0 20px;
+                    .mainItem {
+                        display: inline-block;
+                        height: 230px;
+                        width: 100%;
+                        margin: 10px 0;
+                        box-sizing: border-box;
+                        border: solid 1px rgb(217,90,96);
+                        border-radius:20px;
+                        background-color: #E0F1FB;
+                        transition: 0.3s ;
+                        &:hover {
+                            transition: 0.3s ;
+                            background-color: sandybrown;
+                        }
+                        a {
+                            color: #000000;
+                            font-weight: bold;
+                            text-decoration: none;
+                            .imgTitle {
+                                padding: 15px 0 0 30px;
+                                margin-bottom: -20px;
+                                line-height: 1.2;
+                                &::before {
+                                    content: "★";
+                                    margin-left: -1em;
+                                }
+                            }
+                        }
+
+                    }
+                    .subItems {
+                        width: 100%;
+                        &--a {
+                            display: inline-block;
+                            height: 150px;
+                            min-width: 144px;
+                            max-width: 152px;
+                            margin-bottom: 10px;
+                            box-sizing: border-box;
+                            border: solid 1px rgb(217,90,96);
+                            border-radius:20px;
+                            background-color: #E0F1FB;
+                            transition: 0.3s ;
+                            &:hover {
+                                transition: 0.3s ;
+                                background-color: sandybrown;
+                            }
+                            a {
+                                color: #000000;
+                                font-weight: bold;
+                                text-decoration: none;
+                                .imgTitle {
+                                    font-size: 12px;
+                                    padding: 15px 0 0 20px;
+                                    margin-bottom: -10px;
+                                    &::before {
+                                        content: "★";
+                                        margin-left: -1em;
+                                    }
+                                }
+                                img {
+                                    display: block;
+                                    width: 70%;
+                                    margin: 0 auto;
+                                }
+                                .font-resize {
+                                    margin-bottom: -6px;
+                                }
+                            }
+                        }
+                        &--b {
+                            display: inline-block;
+                            height: 150px;
+                            min-width: 144px;
+                            max-width: 152px;
+                            margin-bottom: 10px;
+                            box-sizing: border-box;
+                            border: solid 1px rgb(217,90,96);
+                            border-radius:20px;
+                            background-color: #E0F1FB;
+                            transition: 0.3s ;
+                            &:hover {
+                                transition: 0.3s ;
+                                background-color: sandybrown;
+                            }
+                            a {
+                                color: #000000;
+                                font-weight: bold;
+                                text-decoration: none;
+                                .imgTitle {
+                                    font-size: 12px;
+                                    padding: 15px 0 0 20px;
+                                    margin-bottom: -10px;
+                                    &::before {
+                                        content: "★";
+                                        margin-left: -1em;
+                                    }
+                                }
+                                img {
+                                    display: block;
+                                    width: 70%;
+                                    padding-top: 13px;
+                                    margin: 0 auto;
+                                }
+                                .font-resize {
+                                    margin-bottom: -6px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &--bottomText {
+                    padding: 0 20px 20px 20px;
+                    font-weight: bold;
+                    p {
+                        font-size: 14px;
+                        padding-bottom: 5px;
+                    }
+                    .presentText {
+                        color: red;
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: 1.2;
+                        letter-spacing: -0.1em;
+                    }
+                    .textBox {
+                        font-size: 14px;
+                        padding: 5px;
+                        margin: 10px 0;
+                        border: solid 1px rgb(119,119,119);
+                        box-sizing: border-box;
+                    }
+                    .buyBtn {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: bold;
+                        background-color: #000;
+                        padding: 10px 0;
+                        transition-duration: 0.5s;
+                        &:hover {
+                            opacity: 0.7;
+                            transition-duration: 0.3s;
+                        }
+                    }
+                }
+            }
+            // 3-3.メインステージチャンネル
+            .infoBox {
+                width: 100%;
+                background-color: #fff;
+                margin-top: 0;
+                margin-bottom: 20px;
+                &--title {
+                    text-align: center;
+                    letter-spacing: 0.8px;
+                    padding: 10px 0 0 25px;
+                    &__inner {
+                        h3 {
+                            color: #E60012;
+                            font-size: 21px;
+                            font-weight: bold;
+                            text-align: start;
+                            letter-spacing: -1px;
+                            line-height: 1.1em;
+                            margin: 0;
+                        }
+                    }
+                }
+                // オープニングイベント
+                .infoBox-s {
+                    padding: 0 10px 15px 10px;
+                    width: 93%;
+                    margin: 0 auto;
+                    border: 1px;
+                    &--inner {
+                        padding: 15px 10px;
+                        margin: 10px 0;
+                        font-weight: bold;
+                        background-color: #eaf6fd;
+                        border: solid 1px #000000;
+                        .infoBoxs-label {
+                            padding-bottom: 5px;
+                            h3 {
+                                font-size: 21px;
+                                color: #E60012;
+                                margin: 0;
+                            }
+                            h4 {
+                                margin: 0;
+                                color: #E60012;
+                                line-height: 1.5;
+                            }
+                        }
+                        .infoBox-about {
+                            p {
+                                font-size: 13px;
+                                margin: 0;
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+                    // チケット詳細
+                    .ticketBox {
+                        padding: 5px;
+                        letter-spacing: -0.1em;
+                        &--title {
+                            border-bottom: solid 2px #e60012;
+                            padding-bottom: 5px;
+                            margin: 20px 0;
+                            h3 {
+                                color: #E60012;
+                                font-size: 21px;
+                                font-weight: bold;
+                                margin: 0;
+                            }
+                        }
+                        &--main {
+                            .ticketBox-text {
+                                .product-title, .bottomText {
+                                    font-size: 19px;
+                                    line-height: 1.2;
+                                    font-family: 'arial';
+                                    font-weight: bold;
+                                    padding-bottom: 0;
+                                    margin: 0;
+                                }
+                                .productBox {
+                                    line-height: 1;
+                                    .priceBox {
+                                        .price {
+                                            position: relative;
+                                            font-family: 'arial';
+                                            font-size: 22px;
+                                            font-weight: bold;
+                                            letter-spacing: -0.08em;
+                                            line-height: 1;
+                                            &:after {
+                                                content: "(税込)";
+                                                position: absolute;
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                width: 100px;
+                                                top: 5px;
+                                                padding-left: 2px;
+
+                                                
+                                            }
+                                        }
+                                    }
+                                    .dateBox {
+                                        display: flex;
+                                        font-size: 22px;
+                                        font-family: 'arial';
+                                        font-weight: bold;
+                                        line-height: 1;
+                                        .date {
+                                            position: relative;
+                                            display: inline-block;
+                                            width: 40%;
+                                            font-size: 22px;
+                                            font-family: 'arial';
+                                            font-weight: bold;
+                                            line-height: 1;
+                                            margin: 0;
+                                            &:after {
+                                                content: "(月)";
+                                                position: absolute;
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                font-weight: bold;
+                                                width: 100px;
+                                                top: 3px;
+                                                padding-left: 2px;
+                                            }
+                                        }
+                                        .time {
+                                            display: inline-block;
+                                            font-size: 22px;
+                                            font-family: 'arial';
+                                            font-weight: bold;
+                                            line-height: 1;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .bottomText {
+                            padding: 10px 5px 0 0;
+                            &--top, &--bottom {
+                                font-size: 12px;
+                                font-weight: bold;
+                                line-height: 1;
+                                margin: 0;
+                                .tt {
+                                    a {
+                                        color: #0080cc;
+                                    }
+                                }
+                            }
+                            // ※　米印
+                            &--top {
+                                letter-spacing: 0.06em;
+                                padding-left: 12px;
+                                line-height: 1;
+                                &::before {
+                                    content: "※";
+                                    margin-left: -0.8em;
+                                }
+                            }
+                            // &--bottom {
+                            //     padding-left: 1em;
+                            //     // margin-left: -0.4em;
+                            //     &::before {
+                            //         content: "";
+                            //         margin-left: -1.2em;
+                            //     }
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 4.フッター
+    #footer {
+        text-align:center;
+        margin:1em;
+        .footer--text {
+            line-height: 1.3;
+            &__top {
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            &__bottom {
+                color: #ffffff;
+                font-size: 30px;
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+        small {
+            display: block;
+            color: #ffffff;
+            padding: 10px 0 0;
+        }
+    }
+}
+/*******************************************
+　　　　  Gfes2020 トップページ　 TB  
+********************************************/
+@media only screen and (min-width:481px) and (max-width:1000px) {
+    
+    .imgPC {
+        display: none;
+    }
+    .sp-br, .tb-br {
+        display: none;
+    }
+    .display-f {
+        display: flex;
+    }
+    .pb-t {
+        padding-top: 20px;
+    }
+    .n-mg-st {
+        margin-top: -2em;
+    }
+
+    // 1.TB-ヘッダー画像
+
+    // 2.TB-SNSアイコン
+    .snsBox {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px 20px;
+        &--list{
+            display: flex;
+            list-style: none;
+            // &__left {
+            // }
+            &__right {
+                padding: 2px 0 0 15px;
+            }
+        }
+    }
+    // 3.TB-メインコンテンツ
+    .mainContents {
+        width: 100%;
+        margin: 0 auto;
+        max-width:700px;
+        &--inner {
+            padding: 0 15px;
+            margin: 0 auto;
+            // 3-1.TB-トップタイトル
+            .topTitle {
+                &--main {
+                    text-align: center;
+                    line-height: 1.1;
+                    h2, h3 {
+                        color: #fff;
+                        font-weight: bold;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                    h2 {
+                        font-size: 18px;
+                    }
+                    h3 {
+                        font-size: 22px;
+                        span {
+                            letter-spacing: 0.2em;
+                        }
+                    }
+                }
+                &--sub {
+                    text-align: center;
+                    line-height: 1.1;
+                    padding: 10px;
+                    p {
+                        color: #F4BA02;
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 22px;
+                        font-weight: bold;
+
+                    }
+                }
+            }
+            // 3-2.TB-総合司会決定/3-4.ゴジラ・ストアTV/3-5.酒井ゆうじ造形LIVE
+            .newsBox {
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 20px;
+                &--topImg {
+                    width: 150px;
+                    margin: 0 auto;
+                    padding: 25px 0 10px;
+                }
+                &--secImg {
+                    width: 230px;
+                    margin: 20px auto 0;
+                }
+                &--text {
+                    line-height: 1.1;
+                    padding: 0 20px;
+                    .topText {
+                        font-size: 19px;
+                        padding: 10px 0;
+                        font-weight: 700;
+                        letter-spacing: 0.05em;
+                        margin: 0;
+                    }
+                    .bottomText {
+                        padding: 10px 0;
+                        color: rgba(29, 29, 29, 0.94);
+                        font-size: 14px;
+                        font-family: monospace;
+                        font-weight: 700;
+                        line-height: 1.2;
+                    }
+                    .underber {
+                        border-bottom: solid 2px #e60012;
+                        padding: 20px 5px 20px;
+                    }
+                    .YoutubeBox {
+                        width: 100%;
+                        padding-top: 10px;
+                        .topText {
+                            font-size: 19px;
+                            padding: 5px 0;
+                            font-weight: 700;
+                            letter-spacing: -0.1em;
+                            line-height: 1.2;
+                        }
+                        .Youtube {
+                            width: 80px;
+                            padding: 15px 0;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .itemsBox {
+                    padding: 0 20px;
+                    .mainItem {
+                        display: inline-block;
+                        height: 350px;
+                        width: 100%;
+                        margin: 10px 0;
+                        box-sizing: border-box;
+                        border: solid 1px rgb(217,90,96);
+                        border-radius:20px;
+                        background-color: #E0F1FB;
+                        transition: 0.3s ;
+                        &:hover {
+                            transition: 0.3s ;
+                            background-color: sandybrown;
+                        }
+                        a {
+                            color: #000000;
+                            font-weight: bold;
+                            text-decoration: none;
+                            .imgTitle {
+                                padding: 15px 0 0 30px;
+                                margin-bottom: -20px;
+                                line-height: 1.2;
+                                &::before {
+                                    content: "★";
+                                    margin-left: -1em;
+                                }
+                            }
+                        }
+                    }
+                    .subItems {
+                        width: 100%;
+                        &--a {
+                            display: inline-block;
+                            height: 250px;
+                            max-width: 300px;
+                            margin-bottom: 10px;
+                            box-sizing: border-box;
+                            border: solid 1px rgb(217,90,96);
+                            border-radius:20px;
+                            background-color: #E0F1FB;
+                            transition: 0.3s ;
+                            &:hover {
+                                transition: 0.3s ;
+                                background-color: sandybrown;
+                            }
+                            a {
+                                color: #000000;
+                                font-weight: bold;
+                                text-decoration: none;
+                                
+                                .imgTitle {
+                                    font-size: 12px;
+                                    padding: 15px 0 0 20px;
+                                    margin-bottom: -10px;
+                                    &::before {
+                                        content: "★";
+                                        margin-left: -1em;
+                                    }
+                                }
+                                img {
+                                    display: block;
+                                    width: 60%;
+                                    margin: 0 auto;
+                                }
+                                .font-resize {
+                                    margin-bottom: -6px;
+                                }
+                            }
+                        }
+                        &--b {
+                            display: inline-block;
+                            height: 250px;
+                            max-width: 300px;
+                            margin-bottom: 10px;
+                            box-sizing: border-box;
+                            border: solid 1px rgb(217,90,96);
+                            border-radius:20px;
+                            background-color: #E0F1FB;
+                            transition: 0.3s ;
+                            &:hover {
+                                transition: 0.3s ;
+                                background-color: sandybrown;
+                            }
+                            a {
+                                color: #000000;
+                                font-weight: bold;
+                                text-decoration: none;
+                                .imgTitle {
+                                    font-size: 12px;
+                                    padding: 15px 0 0 20px;
+                                    margin-bottom: -10px;
+                                    &::before {
+                                        content: "★";
+                                        margin-left: -1em;
+                                    }
+                                }
+                                img {
+                                    display: block;
+                                    width: 60%;
+                                    padding-top: 30px;
+                                    margin: 0 auto;
+                                }
+                                .font-resize {
+                                    margin-bottom: -6px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+                &--bottomText {
+                    padding: 0 20px 20px 20px;
+                    font-weight: bold;
+                    p {
+                        font-size: 16px;
+                        padding-bottom: 5px;
+                    }
+                    .presentText {
+                        color: red;
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 1.2;
+                        letter-spacing: -0.1em;
+                    }
+                    .textBox {
+                        font-size: 16px;
+                        padding: 5px;
+                        margin: 20px 10px;
+                        border: solid 1px rgb(119,119,119);
+                        box-sizing: border-box;
+                    }
+                    .buyBtn {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: #000;
+                        padding: 20px 10px;
+                        transition-duration: 0.5s;
+                        &:hover {
+                            opacity: 0.7;
+                            transition-duration: 0.3s;
+                        }
+                    }
+                }
+            }
+            // 3-3.TB-メインステージチャンネル
+            .infoBox {
+                width: 100%;
+                background-color: #fff;
+                margin-top: 0;
+                margin-bottom: 20px;
+                &--title {
+                    text-align: center;
+                    letter-spacing: 0.8px;
+                    padding: 10px 0 0 25px;
+                    &__inner {
+                        h3 {
+                            color: #E60012;
+                            font-size: 21px;
+                            font-weight: bold;
+                            text-align: start;
+                            letter-spacing: -1px;
+                            line-height: 1.1em;
+                            margin: 0;
+                        }
+                    }
+                }
+                // オープニングイベント
+                .infoBox-s {
+                    padding: 0 10px 15px 10px;
+                    width: 93%;
+                    margin: 0 auto;
+                    border: 1px;
+                    &--inner {
+                        padding: 15px 10px;
+                        margin: 10px 0;
+                        font-weight: bold;
+                        background-color: #eaf6fd;
+                        border: solid 1px #000000;
+                        .infoBoxs-label {
+                            padding-bottom: 5px;
+                            h3 {
+                                font-size: 21px;
+                                color: #E60012;
+                                margin: 0;
+                            }
+                            h4 {
+                                margin: 0;
+                                color: #E60012;
+                                line-height: 1.5;
+                            }
+                        }
+                        .infoBox-about {
+                            p {
+                                font-size: 13px;
+                                margin: 0;
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+                    // チケット詳細
+                    .ticketBox {
+                        padding: 5px;
+                        letter-spacing: -0.1em;
+                        &--title {
+                            border-bottom: solid 2px #e60012;
+                            padding-bottom: 5px;
+                            margin: 20px 0;
+                            h3 {
+                                color: #E60012;
+                                font-size: 21px;
+                                font-weight: bold;
+                                margin: 0;
+                            }
+                        }
+                        &--main {
+                            
+                            .ticketBox-text {
+                                // padding-left:10px;
+                                .product-title, .bottomText {
+                                    font-size: 19px;
+                                    line-height: 1.2;
+                                    font-family: 'arial';
+                                    font-weight: bold;
+                                    padding-bottom: 0;
+                                    margin: 0;
+                                }
+                                .productBox {
+                                    line-height: 1;
+                                    .priceBox {
+                                        .price {
+                                            position: relative;
+                                            font-family: 'arial';
+                                            font-size: 22px;
+                                            font-weight: bold;
+                                            letter-spacing: -0.08em;
+                                            line-height: 1;
+                                            &:after {
+                                                content: "(税込)";
+                                                position: absolute;
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                width: 100px;
+                                                top: 5px;
+                                                padding-left: 2px;
+
+                                                
+                                            }
+                                        }
+                                    }
+                                    .dateBox {
+                                        display: flex;
+                                        font-size: 22px;
+                                        font-family: 'arial';
+                                        font-weight: bold;
+                                        line-height: 1;
+                                        .date {
+                                            position: relative;
+                                            display: inline-block;
+                                            width: 40%;
+                                            font-size: 22px;
+                                            font-family: 'arial';
+                                            font-weight: bold;
+                                            line-height: 1;
+                                            margin: 0;
+                                            &:after {
+                                                content: "(月)";
+                                                position: absolute;
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                font-weight: bold;
+                                                width: 100px;
+                                                top: 3px;
+                                                padding-left: 2px;
+                                            }
+                                        }
+                                        .time {
+                                            display: inline-block;
+                                            font-size: 22px;
+                                            font-family: 'arial';
+                                            font-weight: bold;
+                                            line-height: 1;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .bottomText {
+                            padding: 10px 5px 0 0;
+                            &--top, &--bottom {
+                                font-size: 12px;
+                                font-weight: bold;
+                                line-height: 1;
+                                margin: 0;
+                                .tt {
+                                    a {
+                                        color: #0080cc;
+                                    }
+                                }
+                            }
+                            // ※　米印
+                            &--top {
+                                letter-spacing: 0.06em;
+                                padding-left: 12px;
+                                line-height: 1;
+                                &::before {
+                                    content: "※";
+                                    margin-left: -0.8em;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 4.TB-フッター
+    #footer {
+        text-align:center;
+        margin:1em;
+        .footer--text {
+            line-height: 1.3;
+            &__top {
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            &__bottom {
+                color: #ffffff;
+                font-size: 30px;
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+        a {
+            img {
+                width: 245px;
+                margin: 0 auto;
+                padding: 10px 0;
+                transition-duration: 0.5s;
+                &:hover {
+                    opacity: 0.7;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+        small {
+            display: block;
+            color: #ffffff;
+            padding: 10px 0 0;
+        }
+    }
+}
+/*******************************************
+　　　　  Gfes2020 トップページ　 PC  
+********************************************/
+@media screen and ( min-width:1001px ){
+    
+    /*---- pc共通 ----*/
+    .sns-i {
+        width: 30px;
+    }
+    .imgSP {
+        display: none;
+    }
+    .sp-br {
+        display: none;
+    }
+    .tb-br {
+        display: none;
+    }
+
+    // 1.pc-ヘッダー画像
+    #header {
+        .mainvisual {
+            margin: 0;
+
+            // .imgTop {
+
+            // }
+        }
+    }
+    // 2.PC-SNSアイコン
+    .snsBox {
+        width: 100%;
+        max-width: 400px;
+        padding: 30px 50px;
+        &--list{
+            display: flex;
+            list-style: none;
+            // &__left {
+
+            // }
+            &__right {
+                padding: 2px 0 0 35px;
+            }
+        }
+    }
+    // 3.PC-メインコンテンツ
+    .mainContents {
+        width: 100%;
+        margin: 0 auto;
+        max-width:1012px;
+        &--inner {
+            padding: 0 15px;
+            margin: 0 auto;
+            // 3-1.トップタイトル
+            .topTitle {
+                &--sub {
+                    text-align: center;
+                    line-height: 1.1;
+                    padding-bottom: 30px;
+                    p {
+                        color: #F4BA02;
+                        font-size: 35px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            // 3-2.PC-総合司会決定/3-4.ゴジラ・ストアTV/3-5.酒井ゆうじ造形LIVE
+            .newsBox {
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 20px;
+                &--topImg {
+                    display: inline-block;
+                    width: 280px;
+                    img {
+                        display: block;
+                        width: 200px;
+                        margin: auto;
+                        padding-bottom: 100px;
+                    }
+                }
+                &--secImg {
+                    display: none;
+                    // display: inline-block;
+                    // width: 230px;
+                }
+                .Youtube {
+                    display: inline-block;
+                    width: 80px;
+                    padding: 0 100px;
+                    margin-top: -4em;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &--text {
+                    display: inline-block;
+                    width: 660px;
+                    line-height: 1.1;
+                    .newsBox--secImg-pc {
+                        display: inline-block;
+                        width: 250px;
+                        padding: 20px 20px 0 20px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .topText {
+                        display: inline-block;
+                        font-size: 29px;
+                        padding: 10px 0;
+                        font-weight: 700;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 10px;
+                    }
+                    .f-h {
+                        width: 600px;
+                    }
+                    .f-f {
+                        width: 95%;
+                        padding-left: 20px;
+                    }
+                    .bottomText {
+                        padding: 10px 0;
+                        color: rgba(29, 29, 29, 0.94);
+                        font-size: 18px;
+                        font-family: monospace;
+                        font-weight: 700;
+                        line-height: 1.2;
+                    }
+                    .underber {
+                        border-bottom: solid 2px #e60012;
+                        padding: 20px 5px 20px;
+                    }
+                    .YoutubeBox {
+                        
+                        width: 100%;
+                        // padding-top: 10px;
+                        .topText {
+                            width: 500px;
+                            font-size: 29px;
+                            padding-left: 290px;
+                            font-weight: 700;
+                            letter-spacing: -0.1em;
+                            line-height: 1.2;
+                        }
+                        .Youtube {
+                            display: none;
+                            width: 80px;
+                            padding: 15px 0;
+                            margin: 0 auto;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .f-r {
+                    width: 100%;
+
+                }
+                .itemsBox {
+                    padding: 0 20px;
+
+                    .subItems {
+                        width: 100%;
+                        &--a, &--a1 {
+                            display: inline-block;
+                            height: 250px;
+                            max-width: 300px;
+                            margin-bottom: 10px;
+                            box-sizing: border-box;
+                            border: solid 1px rgb(217,90,96);
+                            border-radius:20px;
+                            background-color: #E0F1FB;
+                            transition: 0.3s ;
+                            &:hover {
+                                transition: 0.3s ;
+                                background-color: sandybrown;
+                            }
+                            a {
+                                color: #000000;
+                                font-weight: bold;
+                                text-decoration: none;
+                                
+                                .imgTitle {
+                                    font-size: 12px;
+                                    padding: 15px 0 0 20px;
+                                    margin-bottom: -10px;
+                                    &::before {
+                                        content: "★";
+                                        margin-left: -1em;
+                                    }
+                                }
+                                img {
+                                    display: block;
+                                    width: 60%;
+                                    margin: 0 auto;
+                                }
+                                .img-b {
+                                    width: 90%;
+                                    padding-top: 40px;
+                                }
+                                .font-resize {
+                                    margin-bottom: -6px;
+                                }
+                            }
+                        }
+                        &--b {
+                            display: inline-block;
+                            height: 250px;
+                            max-width: 300px;
+                            margin-bottom: 10px;
+                            box-sizing: border-box;
+                            border: solid 1px rgb(217,90,96);
+                            border-radius:20px;
+                            background-color: #E0F1FB;
+                            transition: 0.3s ;
+                            &:hover {
+                                transition: 0.3s ;
+                                background-color: sandybrown;
+                            }
+                            a {
+                                color: #000000;
+                                font-weight: bold;
+                                text-decoration: none;
+                                .imgTitle {
+                                    font-size: 12px;
+                                    padding: 15px 0 0 20px;
+                                    margin-bottom: -10px;
+                                    &::before {
+                                        content: "★";
+                                        margin-left: -1em;
+                                    }
+                                }
+                                img {
+                                    display: block;
+                                    width: 60%;
+                                    padding-top: 30px;
+                                    margin: 0 auto;
+                                }
+                                .font-resize {
+                                    margin-bottom: -6px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &--bottomText {
+                    padding: 0 20px 20px 20px;
+                    font-weight: bold;
+                    p {
+                        font-size: 16px;
+                        padding: 5px 0;
+                    }
+                    .presentText {
+                        color: red;
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 1.2;
+                        letter-spacing: -0.1em;
+                    }
+                    .textBox {
+                        font-size: 16px;
+                        padding: 15px 5px;
+                        margin: 20px 0;
+                        border: solid 1px rgb(119,119,119);
+                        box-sizing: border-box;
+                    }
+                    .buyBtn {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: #000;
+                        padding: 20px 10px;
+                        transition-duration: 0.5s;
+                        &:hover {
+                            opacity: 0.7;
+                            transition-duration: 0.3s;
+                        }
+                    }
+                }
+            }
+            // 3-3.PC-メインステージチャンネル
+            .infoBox {
+                width: 100%;
+                background-color: #fff;
+                margin-top: 0;
+                margin-bottom: 20px;
+                &--title {
+                    text-align: center;
+                    letter-spacing: 0.8px;
+                    padding: 20px 0 10px 33px;
+                    &__inner {
+                        h3 {
+                            color: #E60012;
+                            font-size: 29px;
+                            font-weight: bold;
+                            text-align: start;
+                            letter-spacing: -1px;
+                            line-height: 1.1em;
+                            margin: 0;
+                        }
+                    }
+                }
+                // PC-オープニングイベント
+                .infoBox-s {
+                    padding: 0 10px 15px 10px;
+                    width: 93%;
+                    margin: 0 auto;
+                    border: 1px;
+                    &--inner {
+                        padding: 15px 10px;
+                        margin: 10px 0;
+                        font-weight: bold;
+                        background-color: #eaf6fd;
+                        border: solid 1px #000000;
+                        .infoBoxs-label {
+                            padding: 0 0 10px 10px;
+                            h3 {
+                                display: inline-block;
+                                font-size: 26px;
+                                color: #E60012;
+                                margin: 0;
+                            }
+                            h4 {
+                                display: inline;
+                                font-size: 20px;
+                                margin: 0;
+                                color: #E60012;
+                                line-height: 1.5;
+                            }
+                        }
+                        .infoBox-about {
+                            padding: 0 10px;
+                            p {
+                                font-size: 18px;
+                                margin: 0;
+                                line-height: 1.2;
+                            }
+                        }
+                    }
+                    // PC-チケット詳細
+                    .ticketBox {
+                        padding: 5px;
+                        letter-spacing: -0.1em;
+                        &--title {
+                            border-bottom: solid 2px #e60012;
+                            padding-bottom: 5px;
+                            margin: 20px 0;
+                            h3 {
+                                color: #E60012;
+                                font-size: 35px;
+                                font-weight: bold;
+                                margin: 0;
+                            }
+                        }
+                        &--main {
+                            
+                            .ticketBox-text {
+                                display: inline-block;
+                                margin-left:10px;
+                                .product-title, .bottomText {
+                                    font-size: 22px;
+                                    line-height: 1.2;
+                                    font-family: 'arial';
+                                    font-weight: bold;
+                                    padding-bottom: 0;
+                                    margin: 0;
+                                }
+                                .productBox {
+                                    display: flex;
+                                    line-height: 1;
+                                    .priceBox {
+                                        .price {
+                                            position: relative;
+                                            font-family: 'arial';
+                                            font-size: 25px;
+                                            font-weight: bold;
+                                            letter-spacing: -0.08em;
+                                            line-height: 1;
+                                            
+                                            &:after {
+                                                content: "(税込)";
+                                                position: absolute;
+                                                display: inline-block;
+                                                font-size: 16px;
+                                                font-weight: bold;
+                                                width: 100px;
+                                                top: 7px;
+                                                padding-left: 2px;
+
+                                                
+                                            }
+                                        }
+                                    }
+                                    .dateBox {
+                                        display: inline-block;
+                                        display: flex;
+                                        font-size: 25px;
+                                        font-family: 'arial';
+                                        font-weight: bold;
+                                        line-height: 1;
+                                        padding-left: 50px;
+                                        .date {
+                                            position: relative;
+                                            display: inline-block;
+                                            width: 40%;
+                                            font-size: 25px;
+                                            font-family: 'arial';
+                                            font-weight: bold;
+                                            line-height: 1;
+                                            margin: 0;
+                                            
+                                            &:after {
+                                                content: "(月)";
+                                                position: absolute;
+                                                display: inline-block;
+                                                font-size: 16px;
+                                                font-weight: bold;
+                                                width: 100px;
+                                                top: 5px;
+                                                padding-left: 2px;
+                                            }
+                                        }
+                                        .time {
+                                            display: inline-block;
+                                            width: 200px;
+                                            font-size: 25px;
+                                            font-family: 'arial';
+                                            font-weight: bold;
+                                            line-height: 1;
+                                            margin: 0;
+                                            padding-left: 50px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .bottomText {
+                            padding: 10px 5px 0 0;
+                            &--top, &--bottom {
+                                font-size: 12px;
+                                font-weight: bold;
+                                line-height: 1;
+                                margin: 0;
+                                .tt {
+                                    a {
+                                        color: #0080cc;
+                                    }
+                                }
+                            }
+                            // ※　米印
+                            &--top {
+                                letter-spacing: 0.06em;
+                                padding-left: 12px;
+                                line-height: 1;
+                                &::before {
+                                    content: "※";
+                                    margin-left: -0.8em;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 4.PC-フッター
+    #footer {
+        text-align:center;
+        margin:1em;
+        .footer--text {
+            &__top {
+                font-size: 2vw;
+                color: #ffffff;
+                margin-bottom: 0;
+            }
+            &__bottom {
+                font-size: 4vw;
+                color: #ffffff;
+                margin: 0;
+            }
+        }
+        a {
+            img {
+                width: 400px;
+                margin: 0 auto;
+                padding: 50px;
+                transition-duration: 0.5s;
+                &:hover {
+                    opacity: 0.7;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+        small {
+            display: block;
+            color: #ffffff;
+            padding-top: 5px;
+        }
+    }
+}
+
